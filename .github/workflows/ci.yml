@@ -1,0 +1,12 @@
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  woot:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "woot!"
